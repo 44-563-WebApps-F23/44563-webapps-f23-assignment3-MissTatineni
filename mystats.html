@@ -12,7 +12,7 @@
          <p>I like Crispy fried chicken the most because of the crunchiness it holds outside and the tenderness of fresh chicken inside.
             With correct proportion of toppings, crispy fried chicken is best when served hot along with ketchup and some french fries on the side. Yum Yum in the tum tum:)
          </p>
-         <img src="C:\Users\S566608\Desktop\webapps-repos\44563-webapps-f23-assignment3-MissTatineni\CrsipyFriedChicken.png" height="300" width="200" alt="CrsipyFriedChicken">
+         <img src="C:\Users\S566608\Desktop\webapps-repos\44563-webapps-f23-assignment3-MissTatineni\CrsipyFriedChicken.png" height="400" width="400" alt="CrsipyFriedChicken">
          
          <hr>
          <h2>Sports that are a must try!</h2>
@@ -46,6 +46,33 @@
                 <td>3-5 hours</td>
             </tr>
          </table>
+         <hr>
+         <h2>jQuery FAQ</h2>
+         <blockquote cite="https://stackoverflow.com/questions/77063359/code-issue-handling-rapid-clicks-and-game-initialization">
+            <p> I'm currently grappling with a coding challenge and could really use some assistance. 
+                I've encountered an issue with a specific code snippet I'm working on. 
+                The problem I'm facing occurs when I rapidly click the first time. During this initial click, the code behaves incorrectly. 
+                However, interestingly, it starts to handle rapid clicks correctly after this initial hiccup. Despite my efforts to troubleshoot,
+                I've been unable to resolve the problem, and I'm looking for guidance.</p>
+             <pre>
+                <code>var gameStatus= "game";
+                var isGameStillRunning= false;
+                var isGameBusy= false;
+                
+                $(".cube").on("click", function() {
+                
+                    if (isGameBusy) {
+                        console.log("game is busy")
+                        return;
+                    }
+                    console.log("isGameBusy "+isGameBusy)
+                    else if (gameStatus== "player") {
+                            playerSequence_filler(this);
+                    }
+                });
+                   </code>
+                </pre>   
+         </blockquote>
 
     </body>
 </html>
