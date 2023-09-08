@@ -49,29 +49,27 @@
          <hr>
          <h2>jQuery FAQ</h2>
          <blockquote cite="https://stackoverflow.com/questions/77063359/code-issue-handling-rapid-clicks-and-game-initialization">
-            <p> I'm currently grappling with a coding challenge and could really use some assistance. 
-                I've encountered an issue with a specific code snippet I'm working on. 
-                The problem I'm facing occurs when I rapidly click the first time. During this initial click, the code behaves incorrectly. 
-                However, interestingly, it starts to handle rapid clicks correctly after this initial hiccup. Despite my efforts to troubleshoot,
-                I've been unable to resolve the problem, and I'm looking for guidance.</p>
-             <pre>
-                <code>var gameStatus= "game";
+         <p> I'm currently grappling with a coding challenge and could really use some assistance. 
+          I've encountered an issue with a specific code snippet I'm working on. 
+          The problem I'm facing occurs when I rapidly click the first time. During this initial click, the code behaves incorrectly. 
+          However, interestingly, it starts to handle rapid clicks correctly after this initial hiccup. Despite my efforts to troubleshoot,
+          I've been unable to resolve the problem, and I'm looking for guidance.</p>
+          <pre>
+            <code>
+                var gameStatus= "game";
                 var isGameStillRunning= false;
                 var isGameBusy= false;
-                
                 $(".cube").on("click", function() {
-                
-                    if (isGameBusy) {
-                        console.log("game is busy")
-                        return;
-                    }
-                    console.log("isGameBusy "+isGameBusy)
-                    else if (gameStatus== "player") {
-                            playerSequence_filler(this);
-                    }
+                if (isGameBusy) {
+                console.log("game is busy")
+                return;
+                }
+                else if (gameStatus== "player") {
+                playerSequence_filler(this);
+                }
                 });
-                   </code>
-                </pre>   
+                </code>
+            </pre>   
          </blockquote>
 
     </body>
